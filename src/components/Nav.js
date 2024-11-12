@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../icons_assets/Logo .svg"
+import logo from "../images/Logo .svg"
 
 function Nav() {
   return(
