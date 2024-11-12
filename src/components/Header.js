@@ -1,10 +1,11 @@
 
 function Header() {
   return (
-    <header>
-      <h1> My header </h1>
-      <img src="icons_assets/Logo .svg"  alt="Logo"/>
-    </header>
+    <div className="container">
+      <header className="App-header">
+        <h1> My header </h1>
+      </header>
+    </div>
   )
 }
 
