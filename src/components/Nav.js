@@ -1,9 +1,12 @@
+import React from "react";
+import logo from "../icons_assets/Logo .svg"
+
 function Nav() {
   return(
     <div className="container">
       <nav className="App-nav">
         <div className="App-logo">
-          <img src="public/logo192.png" alt="logo" />
+          <img src={logo} alt="logo" />
         </div>
           <ul className="">
             <li><a href="home.html">Home</a></li>
