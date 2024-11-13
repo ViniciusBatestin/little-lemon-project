@@ -39,14 +39,10 @@
   background-color: red;
 }
 
-.App-footer {
-  background-color: aquamarine;
-}
-
 .App-nav {
 display: flex;
 justify-content: space-between;
-padding: 10px;
+padding: 15px;
 height: 30px;
 align-items: center;
 }
@@ -67,7 +63,48 @@ align-items: center;
 
 
 .App-logo img{
-  height: 50px
+ width: 20vw;
+ max-width: 150px;
+ height: auto;
+}
+
+.App-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.App-footer-logo {
+  width: 100%;
+  max-width: 130px;
+  height: auto;
+  margin-left: 5%;
+  padding: 20px 5px;
+}
+
+.App-footer ul,
+.App-footer div {
+  padding: 0;
+  margin: 0;
+}
+
+.App-footer ul {
+
+}
+
+.App-footer ul p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-right: 50px;
+}
+
+.App-footer li {
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.App-footer a {
+  text-decoration: none;
 }
 
 .App-link {
