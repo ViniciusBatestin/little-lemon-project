@@ -1,8 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
-  justify-content: center;
+  grid-template-areas: "nav" "header" "main" "footer";
+  justify-content: stretch;
 }
 
 .container > * {
@@ -13,18 +18,46 @@
   text-align: center;
 }
 
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
+.App-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+}
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
+.App-nav ul{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.App-nav li {
+  list-style: none;
+}
+
+.App-nav a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 10px;
+  padding: 10px;
+
+}
+
+.App-main {
+  background-color: red;
+}
+
+.App-logo img{
+ width: 28vw;
+ max-width: 150px;
+ height: auto;
+}
 
 .App-header {
+  grid-area: header;
+  grid-column: 2/12; /* Weirdly have to aply the grid column here in order to have 2 / 12 passed to the header, it was not accepeting  */
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -35,60 +68,20 @@
   color: white;
 }
 
-.App-main {
-  background-color: red;
-}
-
-.App-nav {
-display: flex;
-justify-content: space-between;
-padding: 15px;
-height: 30px;
-align-items: center;
-}
-
-.App-nav ul{
-  display:flex;
-  list-style: none;
-}
-
-.App-nav li {
-  margin-right: 20px;
-  justify-self: end;
-}
-
-.App-nav a {
-  text-decoration: none;
-}
-
-
-.App-logo img{
- width: 28vw;
- max-width: 150px;
- height: auto;
-}
-
 .App-footer {
+  grid-area: footer;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 10px;
 }
 
 .App-footer-logo {
   width: 100%;
   max-width: 130px;
   height: auto;
-  margin-left: 5%;
-  padding: 20px 5px;
-}
-
-.App-footer ul,
-.App-footer div {
-  padding: 0;
-  margin: 0;
-}
-
-.App-footer ul {
-
+  margin-left: 4%;
+  padding-right: 6rem;
 }
 
 .App-footer ul p {
