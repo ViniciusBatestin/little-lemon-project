@@ -70,6 +70,7 @@
 
 .App-footer {
   grid-area: footer;
+  grid-column: 2 / 12;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
