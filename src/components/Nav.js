@@ -8,7 +8,7 @@ function Nav() {
         <div className="App-logo">
           <img src={logo} alt="logo" />
         </div>
-          <ul className="">
+          <ul className="karla-regular">
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="menu.html">Menu</a></li>

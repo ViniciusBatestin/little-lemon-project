@@ -2,6 +2,24 @@
   margin: 0;
   padding: 0;
 }
+
+/* Google Fonts */
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 400 to 700 */
+
+.karla-regular {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.markazi-text-medium {
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -11,7 +29,7 @@
 }
 
 .container > * {
-  grid-column: 2/12;
+  grid-column: 3/11;
 }
 
 .App {
@@ -34,43 +52,55 @@
 
 .App-nav li {
   list-style: none;
+  font-size: 16pt;
 }
 
 .App-nav a {
   display: inline-block;
   text-decoration: none;
-  text-align: center;
   margin: 0 10px;
-  padding: 10px;
+  padding: 5px;
+}
 
+
+
+.App-logo img{
+ width: 28vw;
+ max-width:200px;
+ height: auto;
+}
+
+.App-header {
+  grid-area: header;
+  background-color: rgb(73, 94, 87);
+  justify-content: center;
+}
+
+.App-header h1 {
+  color: #f4ce14;
+  font-size: 56pt;
+  margin-bottom: -20px;
+}
+
+.App-header h2 {
+  color : whitesmoke;
+  font-size: 28pt;
+  margin-bottom: 20px;
+}
+
+.App-header p {
+  color: whitesmoke;
+  /* font-family: "Karla", sans-serif; */
+  font-size: 14pt;
 }
 
 .App-main {
   background-color: red;
 }
 
-.App-logo img{
- width: 28vw;
- max-width: 150px;
- height: auto;
-}
-
-.App-header {
-  grid-area: header;
-  grid-column: 2/12; /* Weirdly have to aply the grid column here in order to have 2 / 12 passed to the header, it was not accepeting  */
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-footer {
   grid-area: footer;
-  grid-column: 2 / 12;
+  grid-column: 3 / 11;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -85,13 +115,15 @@
   padding-right: 6rem;
 }
 
-.App-footer ul p {
+.App-footer ul h3 {
+  font-size: 16pt;
   font-weight: bold;
   margin-bottom: 10px;
-  margin-right: 50px;
+  margin-right: 80px;
 }
 
 .App-footer li {
+  font-family: "Karla", sans-serif;
   margin-bottom: 6px;
   display: flex;
   justify-content: flex-start;
@@ -103,4 +135,8 @@
 
 .App-link {
   color: #61dafb;
+}
+
+h1 {
+
 }

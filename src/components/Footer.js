@@ -7,7 +7,7 @@ function Footer() {
       <footer className="App-footer">
         <img src={logo} alt="Logo" className="App-footer-logo" />
         <ul>
-            <p><strong>Doormat <br/> navigation</strong></p>
+            <h3 className="karla-regular"><strong>Doormat <br/> navigation</strong></h3>
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="menu.html">Menu</a></li>
@@ -16,17 +16,16 @@ function Footer() {
             <li><a href="login.html">Login</a></li>
         </ul>
 
-        <div>
-          <p><strong>Contact</strong></p>
-          <p>
-            <strong>Phone number:</strong> (123) 456-7890.<br /> <br/>
-            <strong>Email:</strong> info@littlelemon.com.<br /><br/>
-            <strong>Address:</strong> Las Ramblas, Barcelona.
-          </p>
-        </div>
+        <ul>
+          <h3 className="karla-regular"><strong>Contact</strong></h3>
+          <li><strong>Phone number:</strong> (123) 456-7890.</li>
+          <li><strong>Email:</strong> info@littlelemon.com.</li>
+          <li><strong>Address:</strong> Las Ramblas, Barcelona.</li>
+
+        </ul>
 
         <ul>
-          <p><strong>Social Media</strong></p>
+          <h3 className="karla-regular"><strong>Social Media</strong></h3>
           <li><a href="instagram">Instagram</a></li>
           <li><a href="Facebook.html">Facebook</a></li>
           <li><a href="tiktok.html">TikTok</a></li>
