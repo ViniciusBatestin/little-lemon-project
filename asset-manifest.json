@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/little-lemon-project/static/css/main.f4111638.css",
+    "main.js": "/little-lemon-project/static/js/main.af5aae2f.js",
+    "static/js/453.28b0661c.chunk.js": "/little-lemon-project/static/js/453.28b0661c.chunk.js",
+    "static/media/restauranfood.jpg": "/little-lemon-project/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
+    "static/media/logo2.png": "/little-lemon-project/static/media/logo2.215df87837073a73cb27.png",
+    "static/media/Logo .svg": "/little-lemon-project/static/media/Logo .f72c913c48c5334f78f2c336ec36f22b.svg",
+    "index.html": "/little-lemon-project/index.html",
+    "main.f4111638.css.map": "/little-lemon-project/static/css/main.f4111638.css.map",
+    "main.af5aae2f.js.map": "/little-lemon-project/static/js/main.af5aae2f.js.map",
+    "453.28b0661c.chunk.js.map": "/little-lemon-project/static/js/453.28b0661c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4111638.css",
+    "static/js/main.af5aae2f.js"
+  ]
+}
