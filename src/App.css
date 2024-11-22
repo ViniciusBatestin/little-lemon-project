@@ -60,9 +60,8 @@
   text-decoration: none;
   margin: 0 10px;
   padding: 5px;
+  color: rgb(73, 94, 87)
 }
-
-
 
 .App-logo img{
  width: 28vw;
@@ -70,16 +69,43 @@
  height: auto;
 }
 
+/* HEADER */
+
 .App-header {
   grid-area: header;
+  grid-column: 1 / 16;
   background-color: rgb(73, 94, 87);
   justify-content: center;
+  padding: 20px;
+  gap: 20px;
 }
 
 .App-header h1 {
   color: #f4ce14;
   font-size: 56pt;
   margin-bottom: -20px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.header-text {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.header-text p {
+  grid-column-start: 3;
+  grid-column-end: 7;
+}
+
+.header-text h1 {
+  grid-column-start: 3;
+  grid-column-end: 7;
+}
+
+.header-text h2 {
+  grid-column-start: 3;
+  grid-column-end: 7;
 }
 
 .App-header h2 {
@@ -90,9 +116,45 @@
 
 .App-header p {
   color: whitesmoke;
-  /* font-family: "Karla", sans-serif; */
   font-size: 14pt;
 }
+
+.App-header img {
+  position: absolute;
+  border-radius: 5%;
+  width: 360px;
+  height: 430px;
+  z-index: 1;
+  left: 60%;
+  top: 11%;
+}
+
+.header-button {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+}
+
+.App-header button {
+  /* grid-column-start: 3;
+  grid-column-end: 5; */
+  grid-column: 3 / 4;
+  background-color: #f4ce14;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 35px;
+  margin-left: 10px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 11pt;
+  cursor: pointer;
+  box-shadow: 0px, 2px, 5px, rgba(0,0,0,0.3);
+  filter: grayscale(10%);
+  /* width: 200px; */
+  white-space: nowrap;
+}
+
+/* MAIN */
 
 .App-main {
   background-color: red;
@@ -135,8 +197,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-h1 {
-
 }
