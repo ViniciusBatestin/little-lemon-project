@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../images/Logo .svg"
+import hamb from "../images/🦆 icon _hamburger menu.svg"
 
 function Nav() {
   return(
@@ -7,6 +8,9 @@ function Nav() {
       <nav className="App-nav">
         <div className="App-logo">
           <img src={logo} alt="logo" />
+        </div>
+        <div>
+          <img src={hamb} alt="hambuger menu" />
         </div>
           <ul className="karla-regular">
             <li><a href="home.html">Home</a></li>

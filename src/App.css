@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-/* Google Fonts */
-/* <uniquifier>: Use a unique and descriptive class name
-<weight>: Use a value from 400 to 700 */
-
 .karla-regular {
   font-family: "Karla", sans-serif;
   font-optical-sizing: auto;
@@ -32,17 +28,12 @@
   grid-column: 3/11;
 }
 
-.App {
-  text-align: center;
-}
-
 .App-nav {
   display: flex;
   justify-content: space-between;
   padding: 0.6rem;
   align-items: center;
   flex-wrap: wrap;
-  flex-flow: row wrap;
 }
 
 .App-nav ul{
@@ -52,7 +43,7 @@
 
 .App-nav li {
   list-style: none;
-  font-size: 16pt;
+  font-size: 14pt;
 }
 
 .App-nav a {
@@ -60,7 +51,8 @@
   text-decoration: none;
   margin: 0 10px;
   padding: 5px;
-  color: rgb(73, 94, 87)
+  color: rgb(0, 0, 0);
+  font-weight: normal;
 }
 
 .App-logo img{
@@ -69,14 +61,33 @@
  height: auto;
 }
 
+
+
+@media (max-width: 768px) {
+  .App-nav {
+    flex-direction: column;
+    grid-column: 1 / -1;
+    align-items: flex-start;
+  }
+
+  .App-nav ul {
+   flex-direction: column;
+   align-items: flex-start;
+  }
+
+  .App-logo img {
+    width: 100%;;
+  }
+}
+
 /* HEADER */
 
 .App-header {
   grid-area: header;
-  grid-column: 1 / 16;
+  grid-column: 1 / -1;
   background-color: rgb(73, 94, 87);
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
   gap: 20px;
 }
 
@@ -85,7 +96,6 @@
   font-size: 56pt;
   margin-bottom: -20px;
   margin-right: 20px;
-  overflow: hidden;
 }
 
 .header-text {
@@ -101,6 +111,7 @@
 .header-text h1 {
   grid-column-start: 3;
   grid-column-end: 7;
+  white-space: nowrap;
 }
 
 .header-text h2 {
@@ -136,8 +147,6 @@
 }
 
 .App-header button {
-  /* grid-column-start: 3;
-  grid-column-end: 5; */
   grid-column: 3 / 4;
   background-color: #f4ce14;
   border: none;
@@ -150,9 +159,25 @@
   cursor: pointer;
   box-shadow: 0px, 2px, 5px, rgba(0,0,0,0.3);
   filter: grayscale(10%);
-  /* width: 200px; */
   white-space: nowrap;
 }
+
+@media (max-width: 768px) {
+  .App-header img {
+    display: none; /* Hide the image */
+  }
+
+  .App-header h1, .App-header h2, .App-header p {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .App-header button {
+    grid-column: 4 / 10;
+    margin-bottom: 15px;
+  }
+}
+
 
 /* MAIN */
 
