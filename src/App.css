@@ -56,9 +56,9 @@
 }
 
 .App-logo img{
- width: 28vw;
- max-width:200px;
- height: auto;
+  width: 28vw;
+  max-width:200px;
+  height: auto;
 }
 
 
@@ -89,6 +89,7 @@
   justify-content: center;
   padding: 10px;
   gap: 20px;
+  text-decoration: none;
 }
 
 .App-header h1 {
@@ -143,7 +144,8 @@
 .header-button {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-
+  text-decoration: none;
+  grid-column: 3 / 4;
 }
 
 .App-header button {
@@ -157,8 +159,6 @@
   font-weight: bold;
   font-size: 11pt;
   cursor: pointer;
-  box-shadow: 0px, 2px, 5px, rgba(0,0,0,0.3);
-  filter: grayscale(10%);
   white-space: nowrap;
 }
 
@@ -222,4 +222,5 @@
 
 .App-link {
   color: #61dafb;
+  /* text-decoration: none; */
 }

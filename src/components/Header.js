@@ -5,6 +5,7 @@ import restaurantFood from "../images/restauranfood.jpg";
 
 function Header() {
   return (
+    <div className="container">
       <header className="App-header">
         <section>
           <div className="header-text">
@@ -20,12 +21,14 @@ function Header() {
           <div>
               <img src={restaurantFood} alt="restaurant food" className="header-image"/>
           </div>
-
-          <div className="header-button">
-              <Link to="/booking"><button>Reserve a Table</button></Link>
-          </div>
+        <div>
+          <Link to="/boking" className="header-button">
+                 <button>Reserve a Table</button>
+          </Link>
+        </div>
         </section>
       </header>
+    </div>
   )
 }
 
