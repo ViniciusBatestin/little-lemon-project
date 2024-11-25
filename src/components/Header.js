@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import restaurantFood from "../images/restauranfood.jpg";
+
 
 function Header() {
   return (
@@ -20,7 +22,7 @@ function Header() {
           </div>
 
           <div className="header-button">
-              <button>Reserve a Table</button>
+              <Link to="/booking"><button>Reserve a Table</button></Link>
           </div>
         </section>
       </header>
