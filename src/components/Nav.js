@@ -10,7 +10,7 @@ function Nav() {
           <img src={logo} alt="logo" />
         </div>
         <div>
-          <img src={hamb} alt="hambuger menu" />
+          <img src={hamb} alt="hambuger menu" className="hamb"/>
         </div>
           <ul className="karla-regular">
             <li><a href="home.html">Home</a></li>
