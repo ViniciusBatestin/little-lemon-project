@@ -39,6 +39,7 @@
 .App-nav ul{
   display:flex;
   flex-wrap: wrap;
+  margin-right: 70px;
 }
 
 .App-nav li {
@@ -49,7 +50,7 @@
 .App-nav a {
   display: inline-block;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 5px;
   padding: 5px;
   color: rgb(0, 0, 0);
   font-weight: normal;
@@ -60,8 +61,10 @@
   max-width:200px;
   height: auto;
 }
-
-
+.hamb {
+  display: flex;
+  margin-right: 20px;
+}
 
 @media (max-width: 768px) {
   .App-nav {
@@ -87,9 +90,8 @@
   grid-column: 1 / -1;
   background-color: rgb(73, 94, 87);
   justify-content: center;
-  padding: 10px;
+  padding: 20px;
   gap: 20px;
-  text-decoration: none;
 }
 
 .App-header h1 {
@@ -135,7 +137,7 @@
   position: absolute;
   border-radius: 5%;
   width: 360px;
-  height: 430px;
+  height: 400px;
   z-index: 1;
   left: 60%;
   top: 11%;
@@ -182,8 +184,69 @@
 /* MAIN */
 
 .App-main {
-  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-column: 3 / 11;
+  justify-content: center;
+  margin-top: 105px;
+  padding: 20px;
+  gap: 20px;
 }
+
+.App-main h1 {
+  display: grid;
+  font-size: 40pt;
+  grid-column: 1 / span 6;
+  padding-top: 10px;
+}
+
+.App-main button {
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 11pt;
+  background-color: #f4ce14;
+  cursor: pointer;
+  justify-self: center;
+  padding: 18px 45px;
+}
+
+.link-button {
+  grid-column: 10 / span 3 ;
+  justify-self: center;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-right: 40px;
+  padding-top: 10px;
+}
+
+/* .header-button {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  text-decoration: none;
+  grid-column: 3 / 4;
+}
+
+.App-header button {
+  grid-column: 3 / 4;
+  background-color: #f4ce14;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 35px;
+  margin-left: 10px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 11pt;
+  cursor: pointer;
+  white-space: nowrap;
+} */
+
+.main-button {
+  grid-column: 7 / 8;
+}
+
+/* FOOTER */
 
 .App-footer {
   grid-area: footer;
