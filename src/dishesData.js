@@ -1,6 +1,7 @@
-import greekSalad from "../images/greek salad.jpg"
-import lemonPie from "../images/lemon dessert.jpg"
-import {ReactComponent as Bruschetta} from "../images/bruchetta.svg"
+import greekSalad from "../src/images/greek salad.jpg"
+import lemonPie from "../src/images/lemon dessert.jpg"
+import {ReactComponent as Bruschetta} from "../src/images/bruchetta.svg"
+
 const dishes = [
   {
     id: 0,

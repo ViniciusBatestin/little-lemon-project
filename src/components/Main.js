@@ -1,6 +1,6 @@
 import React from "react";
 import  {Link} from "react-router-dom"
-import dishesData from "./DishesData";
+import dishes from "../dishesData";
 
 function Main() {
   return (
@@ -10,10 +10,17 @@ function Main() {
         <Link to="/order-online" className="link-button">
           <button >Online Menu</button>
         </Link>
+
+        {/* cards */}
+        <div>
+            {
+              dishes.map(dishe => <div key={dishe.id}>
+                  <h2>{dishe.title}</h2>
+              </div>)
+            }
+        </div>
       </main>
     </div>
-
-
   )
 }
 
