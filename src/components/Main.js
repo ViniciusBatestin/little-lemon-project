@@ -1,5 +1,6 @@
 import React from "react";
 import  {Link} from "react-router-dom"
+import dishesData from "./DishesData";
 
 function Main() {
   return (
@@ -10,7 +11,9 @@ function Main() {
           <button >Online Menu</button>
         </Link>
       </main>
-     </div>
+    </div>
+
+
   )
 }
 
