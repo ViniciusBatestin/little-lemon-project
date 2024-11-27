@@ -12,10 +12,18 @@ function Main() {
         </Link>
 
         {/* cards */}
-        <div>
+        <div className="card-wraper">
             {
-              dishes.map(dishe => <div key={dishe.id}>
-                  <h2>{dishe.title}</h2>
+              dishes.map(dishe => <div key={dishe.id} className="card-items">
+                <img src={dishe.image} alt={dishe.title} className="card-image"/>
+                <div className="card-text">
+                  <div>
+                    <h5>{dishe.title}</h5>
+                    <b>{dishe.price}</b>
+                  </div>
+                  <p>{dishe.description}</p>
+                  <h5>{dishe.order}</h5>
+                </div>
               </div>)
             }
         </div>

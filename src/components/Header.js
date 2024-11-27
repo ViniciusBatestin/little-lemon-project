@@ -11,7 +11,7 @@ function Header() {
           <div className="header-text">
             <h1 className="markazi-text-medium">Little Lemon</h1>
             <h2 className="karla-regular">Marcelona</h2>
-            <p className="karla-regular">we are a family owned</p>
+            <p className="karla-regular">We are a family owned</p>
             <p className="karla-regular">Mediterranean restaurant,</p>
             <p className="karla-regular">focused on traditional</p>
             <p className="karla-regular">recipes served with a modern</p>
