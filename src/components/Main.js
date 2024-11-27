@@ -1,6 +1,7 @@
 import React from "react";
 import  {Link} from "react-router-dom"
 import dishes from "../dishesData";
+import vespa from "../images/vespa.svg"
 
 function Main() {
   return (
@@ -22,7 +23,8 @@ function Main() {
                     <b>{dishe.price}</b>
                   </div>
                   <p>{dishe.description}</p>
-                  <h5>{dishe.order}</h5>
+                  <h5 className="order">{dishe.order}</h5>
+                  <img src={vespa} alt="deliver logo" className="vespa"/>
                 </div>
               </div>)
             }

@@ -39,7 +39,7 @@
 .App-nav ul{
   display:flex;
   flex-wrap: wrap;
-  margin-right: 70px;
+  /* margin-right: px; */
 }
 
 .App-nav li {
@@ -139,7 +139,7 @@
   width: 360px;
   height: 400px;
   z-index: 1;
-  left: 60%;
+  left: 64%;
   top: 11%;
 }
 
@@ -209,42 +209,74 @@
   background-color: #f4ce14;
   cursor: pointer;
   justify-self: center;
-  padding: 18px 45px;
+  padding: 20px 50px;
 }
 
 .link-button {
-  grid-column: 10 / span 3 ;
+  grid-column: 11 / span 2 ;
   justify-self: center;
   text-decoration: none;
   white-space: nowrap;
-  margin-right: 40px;
   padding-top: 10px;
 }
 
-/* .header-button {
+.card-wraper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  text-decoration: none;
-  grid-column: 3 / 4;
+  grid-column: 1/ span 12;
+  justify-content: center;
+  gap: 20px;
+  font-family: "Karla", sans-serif;
 }
 
-.App-header button {
-  grid-column: 3 / 4;
-  background-color: #f4ce14;
-  border: none;
+.card-items {
+  grid-column: span 4;
+  background: #EDEFEE;
   border-radius: 10px;
-  padding: 10px 35px;
-  margin-left: 10px;
-  margin-top: 15px;
-  font-weight: bold;
-  font-size: 11pt;
-  cursor: pointer;
-  white-space: nowrap;
-} */
-
-.main-button {
-  grid-column: 7 / 8;
+  text-align: left;
+  border-radius: 10px 10px 0px 0px;
 }
+
+.card-image {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-items h5 {
+  font-size: 14pt;
+}
+
+.card-items b {
+  float: right;
+  margin-top: -20px;
+  color: #ee9972;
+}
+
+.card-items p {
+  padding: 25px 0px;
+}
+
+.card-text {
+  padding: 40px;
+}
+
+.order {
+  grid-row-end: end;
+}
+
+
+.vespa {
+  float: right;
+  margin-top: -20px;
+}
+
+.card-text{
+ align-self: end;
+}
+
+
 
 /* FOOTER */
 
