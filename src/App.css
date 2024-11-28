@@ -225,7 +225,9 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column: 1/ span 12;
-  gap: 50px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-items {
@@ -238,6 +240,8 @@
   flex-direction: column;
   justify-content:space-between;
   height: 100%;
+  width: 100%;
+  /* align-items: flex-start; */
 }
 
 .card-image {
@@ -253,7 +257,8 @@
   justify-content: space-between ;
   flex-grow: 1;
   padding: 25px;
-  line-height: 1.5;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .card-description{
@@ -261,6 +266,7 @@
   display: flex;
   align-items: flex-start;          /* Ensure description starts from top */
   margin: 20px 0px;
+  padding: 2px;
 }
 
 .card-items h5 {
@@ -274,8 +280,8 @@
 .card-title {
 display: flex;
 justify-content: space-between;
-margin: 0;
-padding: 0;
+/* margin: 0;
+padding: 0; */
 }
 
 .order {
@@ -292,7 +298,31 @@ justify-content: space-between;
  align-self: end;
 }
 
-@Media (max-width: 768px) {
+@media (max-width: 768px) {
+  .App-main {
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .card-wraper {
+    grid-column: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .card-items {
+    width: 350px;
+    height: auto;
+  }
+
+  .App-main button {
+    grid-column: unset;
+    margin-bottom: 30px;               /* Add space below the button */
+  }
 
 }
 
