@@ -192,6 +192,7 @@
   margin-top: 105px;
   padding: 20px;
   gap: 20px;
+  font-family: "Karla", sans-serif;
 }
 
 .App-main h1 {
@@ -224,17 +225,19 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column: 1/ span 12;
-  justify-content: center;
-  gap: 20px;
-  font-family: "Karla", sans-serif;
+  gap: 50px;
 }
 
 .card-items {
   grid-column: span 4;
+  gap: 5px;
   background: #EDEFEE;
-  border-radius: 10px;
   text-align: left;
   border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  height: 100%;
 }
 
 .card-image {
@@ -244,39 +247,54 @@
   object-fit: cover;
 }
 
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between ;
+  flex-grow: 1;
+  padding: 25px;
+  line-height: 1.5;
+}
+
+.card-description{
+  flex-grow: 1;                     /* Pushes order section to bottom */
+  display: flex;
+  align-items: flex-start;          /* Ensure description starts from top */
+  margin: 20px 0px;
+}
+
 .card-items h5 {
   font-size: 14pt;
 }
 
-.card-items b {
-  float: right;
-  margin-top: -20px;
+.card-title b {
   color: #ee9972;
 }
 
-.card-items p {
-  padding: 25px 0px;
-}
-
-.card-text {
-  padding: 40px;
+.card-title {
+display: flex;
+justify-content: space-between;
+margin: 0;
+padding: 0;
 }
 
 .order {
-  grid-row-end: end;
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
 
-
 .vespa {
-  float: right;
-  margin-top: -20px;
+  margin-left: 10px;
 }
 
 .card-text{
  align-self: end;
 }
 
+@Media (max-width: 768px) {
 
+}
 
 /* FOOTER */
 

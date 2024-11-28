@@ -18,13 +18,17 @@ function Main() {
               dishes.map(dishe => <div key={dishe.id} className="card-items">
                 <img src={dishe.image} alt={dishe.title} className="card-image"/>
                 <div className="card-text">
-                  <div>
+                  <div className="card-title">
                     <h5>{dishe.title}</h5>
                     <b>{dishe.price}</b>
                   </div>
-                  <p>{dishe.description}</p>
-                  <h5 className="order">{dishe.order}</h5>
-                  <img src={vespa} alt="deliver logo" className="vespa"/>
+                  <div className="card-description">
+                    <p>{dishe.description}</p>
+                  </ div>
+                  <div className="order">
+                    <h5>{dishe.order}</h5>
+                    <img src={vespa} alt="deliver logo" className="vespa"/>
+                  </div>
                 </div>
               </div>)
             }
