@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import restaurantFood from "../images/restauranfood.jpg";
 
-
 function Header() {
   return (
     <div className="container">
@@ -18,11 +17,11 @@ function Header() {
             <p className="karla-regular">twist.</p>
           </div>
 
-          <div>
-              <img src={restaurantFood} alt="restaurant food" className="header-image"/>
+          <div className="header-image" id="header-image">
+              <img src={restaurantFood} alt="restaurant food" className="absolute-image"/>
           </div>
         <div>
-          <Link to="/boking" className="header-button">
+          <Link to="/booking" className="header-button">
                  <button>Reserve a Table</button>
           </Link>
         </div>

@@ -19,8 +19,8 @@ function Footer() {
         <ul>
           <h3 className="karla-regular"><strong>Contact</strong></h3>
           <li><strong>Phone number:</strong> (123) 456-7890.</li>
-          <li><strong>Email:</strong> info@littlelemon.com.</li>
-          <li><strong>Address:</strong> Las Ramblas, Barcelona.</li>
+          <li><strong>Email:</strong> info@littlelemon.com</li>
+          <li><strong>Address:</strong> Las Ramblas, Marcelona</li>
 
         </ul>
 
