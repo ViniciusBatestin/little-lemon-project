@@ -1,16 +1,24 @@
-import React from "react";
+import React, {useState} from "react";
 import logo from "../images/Logo .svg"
 import hamb from "../images/🦆 icon _hamburger menu.svg"
 
 function Nav() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toogleMenu = () => {
+    setMenuOpen(!menuOpen)
+  };
+
   return(
     <div className="container">
-      <nav className="App-nav">
+      <nav className={`App-nav ${menuOpen ? "open" : ""}`}>
         <div className="App-logo">
           <img src={logo} alt="logo" />
         </div>
         <div>
-          <img src={hamb} alt="hambuger menu" className="hamb"/>
+          <img src={hamb} alt="hambuger menu" className="hamb"
+          onClick={toogleMenu}
+          />
         </div>
           <ul className="karla-regular">
             <li><a href="home.html">Home</a></li>
