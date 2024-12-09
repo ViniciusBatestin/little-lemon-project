@@ -21,12 +21,12 @@ function Nav() {
           />
         </div>
           <ul className="karla-regular">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="order-online.html">Order Online</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="/reservations">Reservations</a></li>
+            <li><a href="/order-online">Order Online</a></li>
+            <li><a href="/login">Login</a></li>
           </ul>
 
       </nav>
