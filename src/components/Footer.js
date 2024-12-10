@@ -1,5 +1,8 @@
 import React from "react";
 import logo from "../images/logo2.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faFacebook, faTiktok } from '@fortawesome/free-brands-svg-icons';
+
 
 function Footer() {
   return (
@@ -26,9 +29,20 @@ function Footer() {
 
         <ul>
           <h3 className="karla-regular"><strong>Social Media</strong></h3>
-          <li><a href="instagram">Instagram</a></li>
-          <li><a href="Facebook.html">Facebook</a></li>
-          <li><a href="tiktok.html">TikTok</a></li>
+          <li>
+            <a href="www.instagram.com">
+              <FontAwesomeIcon icon={faInstagram} /> Instagram
+            </a></li>
+          <li>
+            <a href="www.facebook.com">
+              <FontAwesomeIcon icon={faFacebook} /> Facebook
+            </a>
+          </li>
+          <li>
+            <a href="tiktok.html">
+              <FontAwesomeIcon icon={faTiktok} /> TikTok
+            </a>
+          </li>
         </ul>
       </footer>
     </div>
