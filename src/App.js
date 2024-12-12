@@ -5,7 +5,6 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Main from './components/Main';
-import Home from './components/Home';
 import Nav from './components/Nav'
 
 
@@ -21,7 +20,7 @@ function App() {
         <Footer />
       </section>
       <Routes>
-        < Route path='/reservation' element={<Header/>} />
+        < Route path='/booking' element={<Header/>} />
       </Routes>
     </Router>
   );
