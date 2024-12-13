@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Main from './components/Main';
 import Nav from './components/Nav'
+import BookingForm from './components/BookingForm';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <Router>
       <Nav />
       <Header />
+      <BookingForm />
       <section id='menu'>
         <Main />
       </section>
@@ -20,7 +22,7 @@ function App() {
         <Footer />
       </section>
       <Routes>
-        < Route path='/booking' element={<Header/>} />
+        < Route path='/booking' element={<BookingForm/>} />
       </Routes>
     </Router>
   );
