@@ -1,9 +1,19 @@
 import React from "react";
+import { useState } from "react";
 import  {Link} from "react-router-dom"
 import dishes from "../dishesData";
 import vespa from "../images/vespa.svg"
 
 function Main() {
+  const [availableTimes, setAvailableTimes] = useState ([
+    "17:00",
+    "18:00",
+    "19:00",
+    "20:00",
+    "21:00",
+    "22:00"
+  ])
+
   return (
     <div className="container">
       <main className="App-main">

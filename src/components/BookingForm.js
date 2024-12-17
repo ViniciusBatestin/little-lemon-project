@@ -1,19 +1,10 @@
 import React, { useState } from "react";
 
-export default function BookingForm() {
+export default function BookingForm(availableTimes) {
     const [selectDate, setSelectDate] = useState("");
     const [selectTime, setSelectTime] = useState("17:00");
     const [guestNumber, setGuestNumber] = useState("1");
     const [occasion, setOccasion] = useState("Birthday");
-
-    const [availableTimes, setAvailableTimes] = useState ([
-      "17:00",
-      "18:00",
-      "19:00",
-      "20:00",
-      "21:00",
-      "22:00"
-    ])
 
     const handleSubmit = (e) => {
       e.preventDefault();
@@ -40,7 +31,7 @@ export default function BookingForm() {
             onChange={(e) => setSelectTime(e.target.value)}
             id="res-time">
               {availableTimes.map((time) => (
-                <option>
+                <option key={time} value={time}>
                   {time}
                 </option>
               )) }
