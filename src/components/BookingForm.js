@@ -1,16 +1,22 @@
 import React, { useState } from "react";
 
-export default function BookingForm(availableTimes) {
+export default function BookingForm({availableTimes, dispatch}) {
     const [selectDate, setSelectDate] = useState("");
-    const [selectTime, setSelectTime] = useState("17:00");
-    const [guestNumber, setGuestNumber] = useState("1");
-    const [occasion, setOccasion] = useState("Birthday");
+    const [selectTime, setSelectTime] = useState("");
+    const [guestNumber, setGuestNumber] = useState("");
+    const [occasion, setOccasion] = useState("");
 
     const handleSubmit = (e) => {
       e.preventDefault();
       console.log("Form submitted")
-    }
+    };
 
+    const handleDate = (e) => {
+      const newDate = e.target.value;
+      setSelectDate(newDate);
+
+      dispatch({type: "UPDATE_TIMES", payload: newDate})
+    }
    return(
     <form onSubmit={handleSubmit} style={{ display: "grid", maxWidth: 200, gap: 20 }}>
       <fieldset>
@@ -18,13 +24,13 @@ export default function BookingForm(availableTimes) {
         <label htmlFor="res-date">Choose date</label>
         <input
           value={selectDate}
-          onChange={(e) => setSelectDate(e.target.value)}
+          onChange={handleDate}
           type="date"
           id="res-date"
         />
       </div>
 
-      <div>
+      {/* <div>
           <label htmlFor="res-time">Choose time</label>
           <select
             value={selectTime}
@@ -36,7 +42,7 @@ export default function BookingForm(availableTimes) {
                 </option>
               )) }
           </select>
-        </div>
+        </div> */}
 
         <div>
           <label htmlFor="guests">Number of guests</label>
