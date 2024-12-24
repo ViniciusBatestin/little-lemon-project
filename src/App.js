@@ -14,7 +14,8 @@ function App() {
     <Router>
       <Nav />
       <Header />
-      <BookingForm />
+      {/* the booking form below is rendering twice, i need to decide if it render in App.js or main.js  */}
+      {/* <BookingForm /> */}
       <section id='menu'>
         <Main />
       </section>
