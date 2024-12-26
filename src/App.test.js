@@ -10,11 +10,11 @@ test('Renders the BookingForm', () => {
 
 test('initializeTimes returns correct time', () => {
   const initialTimes = initializeTimes();
-  expect(initialTimes).toEqual(["17:00", "18:00", "19:00"])
+  expect(initialTimes).toEqual(["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"])
 });
 
 test('updateTimes returns the same state when action type is UPDATE_TIMES', () => {
-    const currentState = ["17:00", "18:00", "19:00"];
+    const currentState = ["17:00", "18:00", "19:00", "20:00", "21:00","22:00"];
     const action = { type: "UPDATE_TIMES", payload: "2023-12-24" };
     const updatedState = updateTimes(currentState, action);
 
