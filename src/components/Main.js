@@ -1,18 +1,18 @@
-import React, {useReducer}from "react";
+import React, {useReducer, useEffect, useState}from "react";
 import  {Link} from "react-router-dom"
 import BookingForm from "./BookingForm";
 import dishes from "../dishesData";
 import vespa from "../images/vespa.svg"
 
-
 export function initializeTimes() {
-  return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
+  const today = new Date();
+  return fetchAPI(today)
  }
 
 export function updateTimes(state, action) {
   switch (action.type) {
     case "UPDATE_TIMES":
-      return initializeTimes()
+      return fetchAPI(action.payload);
     default:
       return state;
   }
