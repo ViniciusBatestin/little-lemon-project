@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import restaurantFood from "../images/restauranfood.jpg";
 
-function Header() {
+function Header({setShowBookingForm}) {
   return (
     <div className="container">
       <header className="App-header">
@@ -22,7 +22,7 @@ function Header() {
           </div>
         <div>
           <Link to="/booking" className="header-button">
-                 <button>Reserve a Table</button>
+                 <button onClick={() => setShowBookingForm(true)}>Reserve a Table</button>
           </Link>
         </div>
         </section>

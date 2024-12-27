@@ -1,13 +1,14 @@
-import React, {useReducer, useEffect, useState}from "react";
-import  {Link} from "react-router-dom"
+import React, { useReducer } from "react";
+import { Link } from "react-router-dom";
 import BookingForm from "./BookingForm";
 import dishes from "../dishesData";
-import vespa from "../images/vespa.svg"
+import vespa from "../images/vespa.svg";
+import { fetchAPI } from "./api";
 
 export function initializeTimes() {
   const today = new Date();
-  return fetchAPI(today)
- }
+  return fetchAPI(today);
+}
 
 export function updateTimes(state, action) {
   switch (action.type) {
@@ -18,48 +19,49 @@ export function updateTimes(state, action) {
   }
 }
 
-function Main() {
-
-  const [availableTimes, dispatch] = useReducer(updateTimes,[], initializeTimes)
-
+function Main({ showBookingForm, setShowBookingForm }) {
+  const [availableTimes, dispatch] = useReducer(updateTimes, [], initializeTimes);
 
   return (
     <div className="container">
+      {showBookingForm ? (
+        <div>
+          {/* Booking Form */}
+          <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
+          <button onClick={() => setShowBookingForm(false)}>Go Back</button>
+        </div>
+      ) : (
+        <main className="App-main">
+          <h1 className="markazi-text-medium">This week's specials!</h1>
+          <Link to="/order-online" className="link-button">
+            <button>Online Menu</button>
+          </Link>
 
-      <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
-
-      <main className="App-main">
-        <h1 className="markazi-text-medium">This weeks specials!</h1>
-        <Link to="/order-online" className="link-button">
-          <button >Online Menu</button>
-        </Link>
-
-
-
-        {/* cards */}
-        <div className="card-wraper">
-            {
-              dishes.map(dishe => <div key={dishe.id} className="card-items">
-                <img src={dishe.image} alt={dishe.title} className="card-image"/>
+          {/* Cards */}
+          <div className="card-wraper">
+            {dishes.map((dish) => (
+              <div key={dish.id} className="card-items">
+                <img src={dish.image} alt={dish.title} className="card-image" />
                 <div className="card-text">
                   <div className="card-title">
-                    <h5>{dishe.title}</h5>
-                    <b>{dishe.price}</b>
+                    <h5>{dish.title}</h5>
+                    <b>{dish.price}</b>
                   </div>
                   <div className="card-description">
-                    <p>{dishe.description}</p>
-                  </ div>
+                    <p>{dish.description}</p>
+                  </div>
                   <div className="order">
-                    <h5>{dishe.order}</h5>
-                    <img src={vespa} alt="deliver logo" className="vespa"/>
+                    <h5>{dish.order}</h5>
+                    <img src={vespa} alt="deliver logo" className="vespa" />
                   </div>
                 </div>
-              </div>)
-            }
-        </div>
-      </main>
+              </div>
+            ))}
+          </div>
+        </main>
+      )}
     </div>
-  )
+  );
 }
 
 export default Main;
