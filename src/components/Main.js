@@ -20,17 +20,18 @@ export function updateTimes(state, action) {
 }
 
 function Main({ showBookingForm, setShowBookingForm }) {
-  const [availableTimes, dispatch] = useReducer(updateTimes, [], initializeTimes);
+  const [availableTimes, dispatch] = useReducer(updateTimes, [], () => initializeTimes());
 
   return (
     <div className="container">
-      {showBookingForm ? (
+      {showBookingForm && (
         <div>
           {/* Booking Form */}
           <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
           <button onClick={() => setShowBookingForm(false)}>Go Back</button>
         </div>
-      ) : (
+        )}
+
         <main className="App-main">
           <h1 className="markazi-text-medium">This week's specials!</h1>
           <Link to="/order-online" className="link-button">
@@ -59,7 +60,6 @@ function Main({ showBookingForm, setShowBookingForm }) {
             ))}
           </div>
         </main>
-      )}
     </div>
   );
 }

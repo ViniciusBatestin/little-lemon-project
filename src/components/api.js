@@ -2,7 +2,7 @@
 I could add window. into the script or copy the code.
 Gues is a work around due outdated exercise. */
 
-const seededRandom = function (seed) {
+export const seededRandom = function (seed) {
   var m = 2 ** 35 - 31;
   var a = 185852;
   var s = seed % m;
@@ -23,6 +23,12 @@ export const fetchAPI = function (date) {
           result.push(i + ":30");
       }
   }
+
+  if (result.length === 0) {
+    result = ["17:00", "18:00", "19:00", "20:00"]; // Example default times
+  }
+
+  console.log('time generation', result)
   return result;
 };
 
