@@ -21,7 +21,7 @@ function Header({setShowBookingForm}) {
               <img src={restaurantFood} alt="restaurant food" className="absolute-image"/>
           </div>
         <div>
-          <Link to="/booking" className="header-button">
+          <Link to="/Booking" className="header-button">
                  <button onClick={() => setShowBookingForm(true)}>Reserve a Table</button>
           </Link>
         </div>

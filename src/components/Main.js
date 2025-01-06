@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import BookingForm from "./BookingForm";
 import dishes from "../dishesData";
 import vespa from "../images/vespa.svg";
-import { fetchAPI } from "./api";
+import { fetchAPI, submitAPI } from "./api";
+import { useNavigate } from "react-router-dom";
+
 
 export function initializeTimes() {
   const today = new Date();
@@ -21,13 +23,24 @@ export function updateTimes(state, action) {
 
 function Main({ showBookingForm, setShowBookingForm }) {
   const [availableTimes, dispatch] = useReducer(updateTimes, [], () => initializeTimes());
+  const navigate = useNavigate()
+
+  const submitForm = (formData) => {
+    const success = submitAPI(formData);
+    if (success) {
+      setShowBookingForm(false)
+      navigate("/confirmed"); // Navigate to the confirmation page
+    } else {
+      alert("Something went wrong. Please try again!");
+    }
+  };
 
   return (
     <div className="container">
       {showBookingForm && (
         <div>
-          {/* Booking Form */}
-          <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
+          {/* Booking Form props */}
+          <BookingForm availableTimes={availableTimes} dispatch={dispatch} submitForm={submitForm} />
           <button onClick={() => setShowBookingForm(false)}>Go Back</button>
         </div>
         )}

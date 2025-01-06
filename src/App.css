@@ -411,3 +411,140 @@ justify-content: space-between;
   color: #61dafb;
   /* text-decoration: none; */
 }
+
+/* Form */
+
+/* General Form Styling */
+form {
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #495e57;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #495e57;
+  background: #eef7ee;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Select Dropdown Styling */
+select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICAgIDxwYXRoIGZpbGw9IiM0OTVlNTciIGQ9Ik02LjgzNSAxMS42NjhsMy43NDgtMy43NDhjLjE1Ni0uMTU2LjM2NC0uMjQzLjU4NS0uMjQzcy40MjkuMDg3LjU4NS4yNDNsMy43NDggMy43NDhjLjE1Ni4xNTYuMjQzLjM2NC4yNDMuNTg1IDAgLjIyLS4wODcuNDI5LS4yNDMuNTg1LS4xNTYuMTU2LS4zNjQuMjQzLS41ODUuMjQzcy0uNDI5LS4wODctLjU4NS0uMjQzbC00LjM0NC00LjM0NGMtLjE1Ni0uMTU2LS4zNjQtLjI0My0uNTg1LS4yNDNzLS40MjkuMDg3LS41ODUuMjQzbC00LjM0NCA0LjM0NGMtLjE1Ni4xNTYtLjM2NC4yNDMtLjU4NS4yNDMtLjIyIDAtLjQyOS0uMDg3LS41ODUtLjI0My0uMTU2LS4xNTYtLjI0My0uMzY0LS4yNDMtLjU4NXMuMDg3LS40MjkuMjQzLS41ODVsMy43NDgtMy43NDhjLjE1Ni0uMTU2LjM2NC0uMjQzLjU4NS0uMjQzeiIvPgo8L3N2Zz4K');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
+}
+
+/* Button Styling */
+button {
+  padding: 12px 20px;
+  background: #f4ce14;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+button:disabled {
+  background: #a8a8a8;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background: #f4ce14;
+}
+
+/* Placeholder Styling */
+input::placeholder {
+  color: #bdbdbd;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  form {
+    padding: 20px;
+    max-width: 100%;
+  }
+}
+
+/* CONFIRMED BOOKING */
+/* Container styling */
+.confirmed-booking {
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+/* Heading Styling */
+.confirmed-booking h1 {
+  font-size: 2rem;
+  color: #ee9972; /* Matches the green-gray tone from your form */
+  margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+.confirmed-booking p {
+  font-size: 1rem;
+  color: #333333; /* Neutral dark gray for readability */
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.back-to-home-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f4ce14; /* Matches your form button color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-to-home-btn:hover {
+  background-color: #3e4c4b; /* Slightly darker green-gray for hover effect */
+  transform: scale(1.05); /* Adds a subtle zoom effect on hover */
+}
