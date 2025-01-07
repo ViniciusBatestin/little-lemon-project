@@ -1,13 +1,13 @@
-#### Development of the Little Lemon Web App
+# Development of the Little Lemon Web App
 
-## Hi everyone! 👋
+#### Hi everyone! 👋
 This repository contains my submission for a Full-Stack design project focused on creating a seamless Table Reservation Feature for a fictional restaurant called Little Lemon. This project was developed as part of the **Meta Professional Certificate Capstone**.
 
-## 🧩 The Problem
+#### 🧩 The Problem
 
 The Little Lemon restaurant was facing a significant challenge: **the absence of a web presence**. The restaurant lacked an online platform that allowed customers to make reservations.
 
-## 🎯 The Goal
+#### 🎯 The Goal
 
 The objective of this project was straightforward: **design and implement an online table reservation system** from scratch for the Little Lemon restaurant. The focus was on creating a website where customers could easily reserve tables online, improving the user experience and streamlining restaurant operations.
 
@@ -19,7 +19,7 @@ Specific goals for the project included:
 
 3. **Providing a responsive and aesthetically consistent design**: The website should look visually appealing and work efficiently across various devices and screen sizes.
 
-## 🛠️ Approach
+#### 🛠️ Approach
 
 To achieve the goal of building a website from scratch, I followed a structured development process, using **React.js** for the frontend and focusing on user-centered design principles. The development process followed these stages:
 
