@@ -1,6 +1,6 @@
-### Development of the Little Lemon Web App
+#### Development of the Little Lemon Web App
 
-### Hi everyone! 👋
+## Hi everyone! 👋
 This repository contains my submission for a Full-Stack design project focused on creating a seamless Table Reservation Feature for a fictional restaurant called Little Lemon. This project was developed as part of the **Meta Professional Certificate Capstone**.
 
 ## 🧩 The Problem
