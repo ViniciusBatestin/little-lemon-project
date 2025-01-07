@@ -31,8 +31,12 @@ To achieve the goal of building a website from scratch, I followed a structured 
 4. **Prototype**: Develop a working prototype of the online reservation system.
 5. **Test**: Gather feedback to refine the system and improve the overall user experience.
 
-### Project Building: Steps in Development
+![Booking Form](https://github.com/ViniciusBatestin/little-lemon-project/blob/main/src/images/Screenshot%202025-01-07%20at%2014.34.28.png)
 
+![Booking Confirmed](https://github.com/ViniciusBatestin/little-lemon-project/blob/main/src/images/Screenshot%202025-01-07%20at%2014.34.39.png)
+
+
+### Project Building: Steps in Development
 1. **Create React App**
 
    The first step was to create the React app using the command `npm init create-react-app my-app`. After generating the app, I cleaned up the default template by removing unnecessary elements like `logo.svg` and the pre-existing code in `App.js`. This gave me a blank canvas to start building the website from scratch.
