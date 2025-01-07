@@ -3,6 +3,8 @@
 #### Hi everyone! 👋
 This repository contains my submission for a Full-Stack design project focused on creating a seamless Table Reservation Feature for a fictional restaurant called Little Lemon. This project was developed as part of the **Meta Professional Certificate Capstone**.
 
+![Little Lemon](https://github.com/ViniciusBatestin/little-lemon-project/blob/main/src/images/Screenshot%202025-01-07%20at%2014.33.28.png)
+
 #### 🧩 The Problem
 
 The Little Lemon restaurant was facing a significant challenge: **the absence of a web presence**. The restaurant lacked an online platform that allowed customers to make reservations.
