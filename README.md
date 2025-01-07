@@ -21,6 +21,8 @@ Specific goals for the project included:
 
 3. **Providing a responsive and aesthetically consistent design**: The website should look visually appealing and work efficiently across various devices and screen sizes.
 
+![Booking Form](https://github.com/ViniciusBatestin/little-lemon-project/blob/main/src/images/Screenshot%202025-01-07%20at%2014.34.28.png)
+
 #### 🛠️ Approach
 
 To achieve the goal of building a website from scratch, I followed a structured development process, using **React.js** for the frontend and focusing on user-centered design principles. The development process followed these stages:
@@ -30,8 +32,6 @@ To achieve the goal of building a website from scratch, I followed a structured 
 3. **Ideate**: Brainstorm features and a design that would meet the goal.
 4. **Prototype**: Develop a working prototype of the online reservation system.
 5. **Test**: Gather feedback to refine the system and improve the overall user experience.
-
-![Booking Form](https://github.com/ViniciusBatestin/little-lemon-project/blob/main/src/images/Screenshot%202025-01-07%20at%2014.34.28.png)
 
 ![Booking Confirmed](https://github.com/ViniciusBatestin/little-lemon-project/blob/main/src/images/Screenshot%202025-01-07%20at%2014.34.39.png)
 
