@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Table Reservation Feature for Little Lemon Restaurant
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Hi everyone! 👋
 
-## Available Scripts
+This repository contains my submission for a UX/UI design project focused on creating a seamless Table Reservation Feature for a fictional restaurant called Little Lemon. This project was developed as part of the Meta Professional Certificate in UX/UI Design.
 
-In the project directory, you can run:
+🌟 About Little Lemon
+Little Lemon is a modern restaurant known for providing the best healthy food options in town. The restaurant offers dine-in, takeout, and delivery services through its dedicated app, catering to busy professionals who prioritize convenient and healthy meal choices.
 
-### `npm start`
+🧩 The Problem
+The Little Lemon App currently faces key usability challenges:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Inconsistent information across pages, leaving users unsure of how to proceed with placing orders.
+Missing essential features like an "add to cart" button on the dish information page.
+A cumbersome and unintuitive table reservation process, with no clear date or time selection options and a time-consuming form.
+🎯 The Goal
+Redesign the interface to resolve inconsistencies and improve user interaction.
+Make the table reservation and online food ordering experience efficient and user-friendly.
+Create a consistent and intuitive workflow to save users' time and reduce frustration.
+🛠️ Approach
+I followed the Design Thinking methodology to ensure the user remained at the center of the process, focusing on these five steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Empathize: Understand users' pain points through research.
+Define: Identify and document core problems to address.
+Ideate: Brainstorm and generate creative solutions.
+Prototype: Develop a functional design prototype.
+Test: Gather feedback and refine the design.
+🎨 My Role
+Full-Stack Web Developer and UX/UI Designer
 
-### `npm test`
+🔧 Responsibilities
+Conducting user research to create personas and journey maps.
+Designing an end-to-end workflow for seamless navigation.
+Creating wireframes, mockups, and interactive prototypes.
+Iterating on feedback to improve usability and accessibility.
+🚀 What's Inside
+This repository includes:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Design Documentation: User personas, journey maps, and problem definitions.
+Wireframes and Mockups: Visual drafts for the improved app design.
+Prototypes: Clickable designs demonstrating the improved features.
+Testing Results: Insights from user testing and feedback.
