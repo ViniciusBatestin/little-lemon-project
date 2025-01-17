@@ -1,8 +1,8 @@
 {
+  "homepage": "https://viniciusbatestin.github.io/little-lemon-project/",
   "name": "little-lemon-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://viniciusbatestin.github.io/little-lemon-project/",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.7.1",
     "@fortawesome/react-fontawesome": "^0.2.2",

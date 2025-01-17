@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/little-lemon-project/static/css/main.f4111638.css",
-    "main.js": "/little-lemon-project/static/js/main.af5aae2f.js",
+    "main.css": "/little-lemon-project/static/css/main.07b2d7da.css",
+    "main.js": "/little-lemon-project/static/js/main.1256222b.js",
     "static/js/453.28b0661c.chunk.js": "/little-lemon-project/static/js/453.28b0661c.chunk.js",
+    "static/media/bruchetta.svg": "/little-lemon-project/static/media/bruchetta.29ea078fea3d3120ed22402e901b5bbc.svg",
+    "static/media/greek salad.jpg": "/little-lemon-project/static/media/greek salad.bed423a1fab5b210e347.jpg",
     "static/media/restauranfood.jpg": "/little-lemon-project/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
     "static/media/logo2.png": "/little-lemon-project/static/media/logo2.215df87837073a73cb27.png",
     "static/media/Logo .svg": "/little-lemon-project/static/media/Logo .f72c913c48c5334f78f2c336ec36f22b.svg",
     "index.html": "/little-lemon-project/index.html",
-    "main.f4111638.css.map": "/little-lemon-project/static/css/main.f4111638.css.map",
-    "main.af5aae2f.js.map": "/little-lemon-project/static/js/main.af5aae2f.js.map",
+    "static/media/🦆 icon _hamburger menu.svg": "/little-lemon-project/static/media/🦆 icon _hamburger menu.0da6f67ced800ab909f63d5144de37ee.svg",
+    "static/media/vespa.svg": "/little-lemon-project/static/media/vespa.411ff85b2be72b99c0dfa62c0d1354a5.svg",
+    "main.07b2d7da.css.map": "/little-lemon-project/static/css/main.07b2d7da.css.map",
+    "main.1256222b.js.map": "/little-lemon-project/static/js/main.1256222b.js.map",
     "453.28b0661c.chunk.js.map": "/little-lemon-project/static/js/453.28b0661c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4111638.css",
-    "static/js/main.af5aae2f.js"
+    "static/css/main.07b2d7da.css",
+    "static/js/main.1256222b.js"
   ]
 }
