@@ -1,5 +1,5 @@
 # Development of the Little Lemon Web App
-## ![Link](https://viniciusbatestin.github.io/little-lemon-project/)
+## [Visit the Website](https://viniciusbatestin.github.io/little-lemon-project/)
 
 #### Hi everyone! 👋
 This repository contains my submission for a Full-Stack design project focused on creating a seamless Table Reservation Feature for a fictional restaurant called Little Lemon. This project was developed as part of the **Meta Professional Certificate Capstone**.
